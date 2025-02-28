@@ -10,14 +10,14 @@
 # - Use a conditional statement to check if `python_is_fun` is `True`.
 # - If `python_is_fun` is `True`, print the message "Python is fun!"
 
-def print_greeting():
-    # Your code goes here. Remember to indent!
-    python_is_fun = True
-    if python_is_fun:
-        print("Python is fun!")
+# def print_greeting():
+#     # Your code goes here. Remember to indent!
+#     python_is_fun = True
+#     if python_is_fun:
+#         print("Python is fun!")
 
-# Call the function
-print_greeting()
+# # Call the function
+# print_greeting()
 
 
 # Exercise 1: Vowel or Consonant
@@ -37,25 +37,25 @@ print_greeting()
 # - Utilize the `in` operator to check for vowels.
 # - Ensure to provide feedback for non-alphabetical or invalid entries.
 
-def check_letter():
-    # Your control flow logic goes here
-    print('enter a letter:')
-    letter = input().lower()
+# def check_letter():
+#     # Your control flow logic goes here
+#     print('enter a letter:')
+#     letter = input().lower()
 
-    if len(letter) != 1:
-        print('you entered too many charaters')
-        return
+#     if len(letter) != 1:
+#         print('you entered too many charaters')
+#         return
     
-    if not letter.isalpha():
-        print('wrong data type entered')
-        return
+#     if not letter.isalpha():
+#         print('wrong data type entered')
+#         return
 
-    if letter in ('a', 'e', 'i', 'o', 'u'):
-        print(f'the letter {letter} is a vowel')
-    else:
-        print(f'the letter {letter} is a consonant')
-# Call the function
-check_letter()
+#     if letter in ('a', 'e', 'i', 'o', 'u'):
+#         print(f'the letter {letter} is a vowel')
+#     else:
+#         print(f'the letter {letter} is a consonant')
+# # Call the function
+# check_letter()
 
 
 # Exercise 2: Old enough to vote?
@@ -74,25 +74,25 @@ check_letter()
 # - Use `int()` to convert the input to an integer. Ensure to handle any conversion errors gracefully.
 # - Use a conditional statement to check if the age meets the minimum voting age requirement.
 
-def check_voting_eligibility():
-    # Your control flow logic goes here
-    print('please enter your age')
-    age = input()
+# def check_voting_eligibility():
+#     # Your control flow logic goes here
+#     print('please enter your age')
+#     age = input()
     
-    try:
-        age = int(age)
-        if age <= 0:
-            print('enter a number greater than 0')
-            return 
-        elif age > 0 and age < 18:
-            print('you are too young to vote')
-        else:
-            print('Go vote!')
-    except ValueError:
-        print('please enter a number')
+#     try:
+#         age = int(age)
+#         if age <= 0:
+#             print('enter a number greater than 0')
+#             return 
+#         elif age > 0 and age < 18:
+#             print('you are too young to vote')
+#         else:
+#             print('Go vote!')
+#     except ValueError:
+#         print('please enter a number')
     
-# Call the function
-check_voting_eligibility()
+# # Call the function
+# check_voting_eligibility()
 
 
 # Exercise 3: Calculate Dog Years
@@ -114,38 +114,38 @@ check_voting_eligibility()
 # - Apply conditional logic to perform the correct age calculation based on the dog's age.
 
 
-def calculate_dog_years():
-    # Your control flow logic goes here
-    dog_age = input("enter your dog's age: ")
-    dog_years = 0
+# def calculate_dog_years():
+#     # Your control flow logic goes here
+#     dog_age = input("enter your dog's age: ")
+#     dog_years = 0
 
-    try: 
-        dog_age = int(dog_age)
+#     try: 
+#         dog_age = int(dog_age)
 
-        if dog_age <= 0: 
-            print('enter a number greater than 0')
-            return
+#         if dog_age <= 0: 
+#             print('enter a number greater than 0')
+#             return
     
-        if dog_age < 0:
-            print('enter a positive number')
-            return
+#         if dog_age < 0:
+#             print('enter a positive number')
+#             return
         
-        while dog_age > 0:
-            if dog_age > 2:
-                dog_years += 7
-            else:
-                dog_years += 10
+#         while dog_age > 0:
+#             if dog_age > 2:
+#                 dog_years += 7
+#             else:
+#                 dog_years += 10
 
-            dog_age -= 1
+#             dog_age -= 1
   
-    except ValueError:
-        print('Please enter a number')
-        return
+#     except ValueError:
+#         print('Please enter a number')
+#         return
     
-    print(f"The dog's age in dog years is {dog_years}")
+#     print(f"The dog's age in dog years is {dog_years}")
 
-# Call the function
-calculate_dog_years()
+# # Call the function
+# calculate_dog_years()
 
 
 # Exercise 4: Weather Advice
@@ -164,35 +164,35 @@ calculate_dog_years()
 # Hints:
 # - Use logical operators (`AND`, `OR`, `NOT`) in your if statements to handle multiple conditions.
 
-def weather_advice():
-    # Your control flow logic goes here
-    print('is it cold today? (enter \'yes\' or \'no\')')
-    is_cold = input().lower()
-    print('is it raining today? (enter \'yes\' or \'no\')')
-    is_raining = input().lower()
+# def weather_advice():
+#     # Your control flow logic goes here
+#     print('is it cold today? (enter \'yes\' or \'no\')')
+#     is_cold = input().lower()
+#     print('is it raining today? (enter \'yes\' or \'no\')')
+#     is_raining = input().lower()
     
-    if is_cold != 'yes' and is_cold != 'no':
-        print('please enter \'yes\' or \'no\'')
-        return
+#     if is_cold != 'yes' and is_cold != 'no':
+#         print('please enter \'yes\' or \'no\'')
+#         return
 
-    if is_raining != 'yes' and is_raining != 'no':
-        print('please enter \'yes\' or \'no\'')
-        return
+#     if is_raining != 'yes' and is_raining != 'no':
+#         print('please enter \'yes\' or \'no\'')
+#         return
 
-    if is_cold == 'yes' and is_raining == 'yes':
-        print('wear a raincoat')
+#     if is_cold == 'yes' and is_raining == 'yes':
+#         print('wear a raincoat')
     
-    if is_cold == 'yes' and is_raining == 'no':
-        print('wear a warm coat')
+#     if is_cold == 'yes' and is_raining == 'no':
+#         print('wear a warm coat')
 
-    if is_cold == 'no' and is_raining == 'yes':
-        print('bring an umbrella')
+#     if is_cold == 'no' and is_raining == 'yes':
+#         print('bring an umbrella')
 
-    if is_cold == 'no' and is_raining == 'no':
-        print('wear light clothing')
+#     if is_cold == 'no' and is_raining == 'no':
+#         print('wear light clothing')
     
-# Call the function
-weather_advice()
+# # Call the function
+# weather_advice()
 
 # Exercise 5: What's the Season?
 #
@@ -213,38 +213,86 @@ weather_advice()
 # - Adjust the season based on the day of the month when needed.
 # - Ensure to validate input formats and handle unexpected inputs gracefully.
 
-def determine_season():
+# def determine_season():
+#     # Your control flow logic goes here
+#     print('enter month of the year (jan - dec)')
+
+#     month = input().lower()
+#     months = ["jan", "feb", "mar", "apr", "may", "jun", "jul", "aug", "sep", "oct", "nov", "dec"]
+#     if month not in months:
+#       print('invalid month format, please enter 3 letter abbreviation')
+#       return
+
+#     print('enter day of month')
+
+#     day = input()
+#     try: 
+#       day = int(day)
+#     except ValueError:
+#       print('invalid input for day')
+#       return
+    
+#     if day > 31:
+#       print('what month has this many days???')
+#       return
+
+#     if month == "dec" and day >= 21 or month in ["jan", "feb"] or month == "mar" and day <= 19:
+#         season = "Winter"
+#     elif month == "mar" and day >= 20 or month in ["apr", "may"] or month == "jun" and day <= 20:
+#         season = "Spring"
+#     elif month == "jun" and day >= 21 or month in ["jul", "aug"] or month == "sep" and day <= 21:
+#         season = "Summer"
+#     else:
+#         season = "Fall"
+    
+#     print(f'{month.capitalize()} {day} is in {season}')
+# # Call the function
+# determine_season()
+
+# Exercise 6: Number Guessing Game
+#
+# Write a Python function named `guess_number` that allows a user to guess a predetermined number within a range.
+#
+# Requirements:
+# - Set a fixed number as the target for guessing (e.g., 42).
+# - Prompt the user to guess a number within a range (e.g., 1 to 100).
+# - Allow the user to guess up to five times.
+# - After each guess, use conditional statements with AND, OR, and NOT to give the user hints like:
+#   - "Guess is too low" or "Guess is too high."
+#   - "Last chance!" when they are on their fifth guess.
+# - Print "Congratulations, you guessed correctly!" if they guess the number.
+# - Print "Sorry, you failed to guess the number in five attempts." if they do not succeed.
+#
+# Hints:
+# - Use a for loop with a range to limit guesses to five.
+# - Use logical AND, OR, and NOT to check conditions and provide appropriate feedback.
+
+def guess_number():
     # Your control flow logic goes here
-    print('enter month of the year (jan - dec)')
+    target_number = 42
+    attempts = 5
 
-    month = input().lower()
-    months = ["jan", "feb", "mar", "apr", "may", "jun", "jul", "aug", "sep", "oct", "nov", "dec"]
-    if month not in months:
-      print('invalid month format, please enter 3 letter abbreviation')
-      return
+    print("Try to guess the number between 1 and 100.")
 
-    print('enter day of month')
+    for attempt in range(1, attempts + 1):
+        try:
+            guess = int(input(f"Attempt {attempt}/{attempts}: Enter your guess: "))
+        except ValueError:
+            print("Invalid input. Please enter a number.")
+            continue
 
-    day = input()
-    try: 
-      day = int(day)
-    except ValueError:
-      print('invalid input for day')
-      return
-    
-    if day > 31:
-      print('what month has this many days???')
-      return
+        if guess == target_number:
+            print("Congratulations, you guessed correctly!")
+            return
+        elif guess < target_number:
+            print("Your guess is too low.")
+        else:
+            print("Your guess is too high.")
 
-    if month == "dec" and day >= 21 or month in ["jan", "feb"] or month == "mar" and day <= 19:
-        season = "Winter"
-    elif month == "mar" and day >= 20 or month in ["apr", "may"] or month == "jun" and day <= 20:
-        season = "Spring"
-    elif month == "jun" and day >= 21 or month in ["jul", "aug"] or month == "sep" and day <= 21:
-        season = "Summer"
-    else:
-        season = "Fall"
-    
-    print(f'{month.capitalize()} {day} is in {season}')
+        if attempt == attempts - 1:
+            print("Last chance!")
+
+    print("Sorry, you failed to guess the number in five attempts.")
+
 # Call the function
-determine_season()
+guess_number()
